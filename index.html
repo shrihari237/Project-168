@@ -28,17 +28,30 @@
       <a-asset-item id="crane-gltf" src="model/scene.gltf"></a-asset-item>
     </a-assets>
 
-    <a-marker id="crane-marker" type="pattern" URL="assets/markers/pattern-crane.patt" cursor="rayOrigin: mouse">
-      <a-entity id="crame" position="-1 0 0" scale="5 5 5" gltf-model="#crane-gltf"></a-entity>
+    <a-marker id="crane-marker" type="pattern" URL="assets/markers/pattern-crane.patt" cursor="rayOrigin: mouse"
+      createbuttons>
+      <a-entity id="crame" position="-1 0 0" rotation="-90 0 0" scale="5 5 5" gltf-model="#crane-gltf"></a-entity>
 
-      <a-plane position="0 0 0" width="1.5" height="1.5" rotation="-90 0 0">
-        <a-plane position="0 0.89 0.02" width="1.49" height="0.3" rotation="0 0 0" color="#F0C30F">
+      <a-plane position="0 0 0" width="2" height="1.5" rotation="-90 0 0">
+        <a-plane position="0 0.89 0.02" width="2" height="0.3" rotation="0 0 0" color="#F0C30F">
           <a-entity position="0 0 0.1" rotation="0 0 0"
-            text="font:monoid;value:Hydrolic Crane;color:black;width: 1.8;height:1;align:center;"></a-entity>
+            text="font:;value:Hydrolic Crane;color:black;width: 1.8;height:1;align:center;"></a-entity>
         </a-plane>
+
+        <a-entity text="font:monoid;value:PULL BACK AND GO: Friction powered
+        crane truck toy, 360-degree rotating
+        left and right, machine can pull up
+        & down, swing left & right. High
+        Quality Material: FunBlast crane toy
+        is made of 100% high-quality abs
+        plastics and metal shovel which is
+        durable, light and Non-Toxic with
+        strong crash resistance;color:black;width: 1.8;height:1;align:center;"></a-entity>
     </a-marker>
 
-    <div id="button-div" createbuttons></div>
+    <div id="button-div">
+
+    </div>
   </a-scene>
 </body>
 
